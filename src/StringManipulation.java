@@ -22,7 +22,7 @@ public class StringManipulation {
         System.out.println("Обрезали пробелы у - " + asTrim(" пробелы  "));
 
 //        NameSwap("Bill Gates");
-        //StringEquals("meme@me.cob","meme@me.com");
+//        StringEquals("meme@me.cob","meme@me.com");
     }
 
     static int indexOfString(String ampersand) {
@@ -41,13 +41,25 @@ public class StringManipulation {
         return result;
     }
 
-    public static void NameSwap(String name) {
+    /**
+     * returns строку
+     * @param name строка
+     * @return namе в виде строки с отрезамным 0 и +2 от пробела
+     */
+    public static String NameSwap(String name) {
         String NameChars;
         int spacePos = name.indexOf(" ");
-        NameChars = name.substring(0, spacePos + 2);
-        System.out.println(NameChars);
+        System.out.println("Результат spacePos = " + spacePos);
+
+        NameChars = name.substring(0, spacePos + 3);
+        return NameChars;
     }
 
+    /**
+     * Сравнивает строки
+     * @param foo сткрока
+     * @param bar строка
+     */
     public static void StringEquals(String foo, String bar) {
         Boolean isMatch = false;
 
@@ -90,13 +102,15 @@ public class StringManipulation {
         }
         return result;
     }
-    static  String asReplace (String aString){
+
+    static String asReplace(String aString) {
         String result = aString.replace("рождением", "рождения");
         return result;
     }
-    static String asTrim(String amend ){
-        String result = amend.trim( );
-        return result ;
+
+    static String asTrim(String amend) {
+        String result = amend.trim();
+        return result;
     }
 }
 
