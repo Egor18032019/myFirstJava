@@ -1,0 +1,6 @@
+one один
+two два
+три 3 or  three
+4 or четые four and `4`                '4'
+
+шесть 6 or six
